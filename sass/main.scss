@@ -1,11 +1,11 @@
-@import "base/footer";
 @import "base/resets";
 @import "base/typography";
-@import "components/cards";
 @import "layout/header";
+@import "components/cards";
+@import "layout/footer";
 @import "pages/index";
 @import "pages/nosotros";
-@import "pages/contacto"
+@import "pages/contacto";
 
 /* Estructura 7 en 1.
 ! base -> todos los estilos de inicio

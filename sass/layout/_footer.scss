@@ -1,0 +1,64 @@
+.footer-top {
+  padding-inline: 4vw;
+  padding-top: 1vw;
+  padding-bottom: 4vw;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 40% repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+
+  p {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: $color-primary;
+    text-align: center;
+  }
+
+  .logo-cont {
+    text-align: center;
+    .logo {
+      max-width: 80px;
+      flex-shrink: 1;
+    }
+  }
+
+  .icon {
+    justify-self: end;
+    padding-inline: 3rem;
+    width: 35vw;
+  }
+
+  .icon-cont {
+    text-align: center;
+  }
+
+  .icon__link > img {
+    padding: 5px;
+    width: 3rem;
+  }
+  .icon__link > img:hover {
+    background-color: rgba(23, 23, 233, 0.2);
+    border-radius: 50%;
+  }
+
+  a {
+    color: $color-secondary;
+  }
+  a:hover {
+    color: $color-primary;
+  }
+}
+
+.footer-fixed {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(20, 20, 93, 0.5);
+  color: whitesmoke;
+  font-weight: 300;
+  padding-inline: 1rem;
+  width: 100%;
+  text-align: center;
+}
