@@ -83,7 +83,6 @@
   & input {
     position: relative;
     top: 1rem;
-    left: 20%;
     padding: 10px;
     background-color: $color-secondary;
     color: white;
@@ -92,4 +91,11 @@
     font-size: 1rem;
     font-family: $font-primary;
   }
+}
+
+.card__image-container:hover {
+  transition: 0.1s transform ease-in;
+  transform: scale(.99);
+  border-radius: 20%;
+  border: 1px solid $color-secondary;
 }
