@@ -56,59 +56,59 @@
     </header>
     <!-- main-header -->
 
+    <!-- sección contáctenos -->
     <section class="section-contact-us">
       <div class="section-contact-us__info contact1">
         <div class="contact1__title"><h1>Toyland</h1></div>
-        <div><a href="#"><img src="../img/location.png" alt="address" /></a>
-        <p>Dirección: Calle cualquiera 123 # 38 - 20 </p></div>
-        <div><a href="#"><img src="../img/phone.png" alt="phone" /></a>        <p>Teléfono: 123456789</p>
+        <div>
+          <a href="#"><img src="../img/location.png" alt="address" /></a>
+          <p>Dirección: <em>Calle Goku # 38 - 20</em></p>
         </div>
-        <div><a href="#"><img src="../img/email.png" alt="mail" /></a>        <p>Email: info.toyland@juegos.com</p>
+        <div>
+          <a href="#"><img src="../img/phone.png" alt="phone" /></a>
+          <p>Teléfono: <em>+123456789</em></p>
         </div>
-        <div><a href="#"><img src="../img/website.png" alt="website" /></a>        <p>Website: toyland.com</p>
+        <div>
+          <a href="#"><img src="../img/email.png" alt="mail" /></a>
+          <p>Email: <em>info.toyland@juegos.com</em></p>
+        </div>
+        <div>
+          <a href="#"><img src="../img/website.png" alt="website" /></a>
+          <p>Website: <em>https.toyland.com</em></p>
         </div>
       </div>
 
       <!-- FORMULARIO -->
-      <div class="section-contact-us__form contact2">
-        <form action="http://localhost:8080/mensaje" method="post" target="_blank">
+      <div class="section-contact-us__form">
+        <form action="http://localhost:8080/mensaje" class="contact2" method="post" target="_blank">
           <fieldset>
             <legend>Contáctenos</legend>
-            <div>
-              <label>
-                Nombre: *
-                <input type="text" name="name" required />
-              </label>
+            <div class="contact2__name">
+              <div><label for="name">Nombre: *</label></div>
+              <div><input type="text" name="name" placeholder="Nombre" required /></div>
             </div>
-            <div>
-              <label>
-                Email: *
-                <input type="email" name="mail" required />
-              </label>
+            <div class="contact2__email">
+              <div><label for="mail">Email: *</label></div>
+              <div><input type="email" name="mail" placeholder="Correo Electrónico" required /></div>
             </div>
-            <div>
-              <label>
-                Asunto: *
-                <input type="text" />
-              </label>
+            <div class="contact2__subject">
+              <div><label for="subject">Asunto: *</label></div>
+              <div><input type="text" name="subject" placeholder="Asunto" required /></div>
             </div>
-            <div>
-              <label>
-                Mensaje: *
-                <textarea name="message" placeholder="En que podemos servirte?"></textarea>
-              </label>
+            <div class="contact2__message">
+              <div><label for="message">Mensaje: *</label></div>
+              <div><textarea name="message" placeholder="Deseo saber más sobre..." required></textarea></div>
             </div>
-            <div>
+            <div class="contact2__button">
               <button>Enviar</button>
             </div>
           </fieldset>
         </form>
+        <div class="section-contact-us__img contact3">
+          <img src="../img/buzz.webp" alt="buzz" />
+        </div>
       </div>
       <!-- FIN FORMULARIO -->
-
-      <div class="section-contact-us__img contact3">
-        <img src="../img/buzz.webp" alt="buzz" />
-      </div>
     </section>
 
     <!-- footer -->
