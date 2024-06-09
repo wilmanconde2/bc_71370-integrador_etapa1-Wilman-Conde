@@ -1,41 +1,83 @@
-.section-contact-us {
+.section-login {
   padding-top: 25vh;
   display: grid;
 
+  &__login {
+    background-color: rgba(66, 103, 178, 0.02);
+    border-radius: 15px;
+    border: 1px solid grey;
+  }
+
+  img {
+    width: 55px;
+  }
   &__info {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    grid-template-columns: 300px;
     text-align: center;
-    color: $color-secondary;
-    padding-bottom: 3rem;
-    padding-inline: 12vw;
+    justify-self: center;
 
-    img {
-      width: 55px;
-    }
+    fieldset {
+      border: none;
 
-    p {
-      font-size: 0.9em;
-    }
+      legend {
+        padding: 1rem;
+      }
 
-    em {
-      color: $color-primary;
-    }
+      .lbl-user {
+        padding: 1rem;
+      }
 
-    .contact1__title {
-      grid-column: 1/5;
-      font-size: 2em;
-      padding-bottom: 2rem;
+      .pass {
+        padding: 1rem;
+      }
+
+      .lbl-pass {
+        display: inline;
+      }
+
+      a {
+        display: inline;
+        font-size: 0.5em;
+        padding-inline: 1rem;
+      }
+
+      input {
+        width: 80%;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+      }
+
+      input::placeholder {
+        font-style: italic;
+      }
+
+      .login__button {
+        padding: 1rem;
+      }
+      button {
+        font-family: $font-primary;
+        background-color: $color-primary;
+        color: $color-secondary;
+        padding: 5px;
+        padding-inline: 10px;
+        border-radius: 10px;
+        border: none;
+        color: whitesmoke;
+      }
     }
   }
 
-  &__form {
+  
+  .section-contact-us__form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-inline: 12vw;
-
-    .contact2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    .contact {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       padding: 1rem;
@@ -121,7 +163,9 @@
       text-align: center;
       background-color: rgba(66, 103, 178, 0.03);
       padding: 2rem;
-      // border-radius: 25px;
+      img{
+        width: 100%;
+      }
     }
   }
 }
