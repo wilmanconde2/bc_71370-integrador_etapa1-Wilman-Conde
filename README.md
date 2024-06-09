@@ -3,5 +3,4 @@
 ### bc 71370
 
 
-TODO breakpoints - carrito hamburguesa - 
-TODO cuentaRegistrarse.html 
+TODO breakpoints
