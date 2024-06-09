@@ -29,7 +29,6 @@
 }
 
 .section-cards {
-  padding-top: 25vh;
 
   &__header {
     color: $color-secondary;
@@ -77,3 +76,9 @@
     font-weight: 100;
   }
 }
+
+html{
+  padding-bottom: 1.5rem;
+}
+
+
