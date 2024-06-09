@@ -1,45 +1,44 @@
 .footer-top {
+  display: grid;
   padding-inline: 4vw;
   padding-top: 1vw;
   padding-bottom: 4vw;
   grid-column: 1/4;
-  display: grid;
-  grid-template-columns: 40% repeat(2, 1fr);
-  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  justify-content: space-around;
 
   p {
-    font-size: 1.5em;
     font-weight: 100;
     color: $color-primary;
     text-align: center;
+    flex-shrink: 1;
   }
 
   .logo-cont {
     text-align: center;
     .logo {
-      max-width: 80px;
-      flex-shrink: 1;
+      max-width: 50px;
     }
   }
 
   .icon {
-    justify-self: end;
-    padding-inline: 3rem;
-    width: 35vw;
-  }
+    justify-self: center;
 
-  .icon-cont {
-    text-align: center;
-  }
+    &__cont {
+      text-align: center;
+    }
 
-  .icon__link > img {
-    padding: 5px;
-    width: 3rem;
-  }
-  .icon__link > img:hover {
-    background-color: rgba(23, 23, 233, 0.2);
-    border-radius: 50%;
+    &__link > img {
+      padding: 5px;
+      width: 2.5rem;
+      width: 8vw;
+    }
+
+    &__link > img:hover {
+      background-color: rgba(23, 23, 233, 0.2);
+      border-radius: 50%;
+    }
   }
 
   a {
@@ -47,6 +46,24 @@
   }
   a:hover {
     color: $color-primary;
+  }
+
+  // ! ----------------breakpoint-----------------
+  // ! -------------------------------------------
+
+  @media (min-width: 576px) {
+    & {
+      //footer-top
+      font-size: 1.5em;
+    }
+    .logo-cont {
+      .logo {
+        max-width: 80px;
+      }
+    }
+    .icon__link > img {
+      width: 50px;
+    }
   }
 }
 
