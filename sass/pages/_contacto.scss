@@ -116,7 +116,7 @@
       padding: 2rem;
 
       img {
-        max-width: 100%;
+        width: 100%;
       }
     }
   }
@@ -150,13 +150,13 @@
 
       &__form {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); // TODO // ! arreglar tamaño foto
+        grid-template-columns: repeat(2, 1fr);
         padding-inline: 5vw;
+        padding-bottom: 2rem;
 
         .contact2 {
           border-radius: 0;
-          min-width: 270px;  
-
+          min-width: 270px;
 
           legend {
             text-align: center;
@@ -170,7 +170,7 @@
 
           &__email {
             grid-column: 2/3;
-            padding-inline: 1rem; // ! padding-right 2rem
+            padding-inline: 1rem;
             padding-bottom: 1rem;
           }
 
@@ -193,9 +193,8 @@
           background-color: rgba(66, 103, 178, 0.03);
           padding: 2rem;
 
-          // width: 100%;
           img {
-          min-width: 35vw;  
+            min-width: 35vw;
             width: 80%;
           }
         }

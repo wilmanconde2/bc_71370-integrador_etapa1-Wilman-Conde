@@ -50,6 +50,10 @@
     & {
       //footer-top
       font-size: 1.5em;
+
+      .icon__text {
+        text-align: start;
+      }
     }
     .logo-cont {
       .logo {
