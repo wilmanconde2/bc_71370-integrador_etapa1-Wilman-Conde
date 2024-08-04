@@ -7,8 +7,6 @@
   flex-direction: column-reverse;
 }
 
-
-
 // ! ----------------breakpoint-----------------
 // ! -------------------------------------------
 
@@ -46,6 +44,10 @@
 
   &:checked + .nav-bar {
     display: block;
+
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+      background-color: $color-third;
+    }
   }
 }
 
@@ -84,9 +86,10 @@
   &__nav-link {
     display: block;
     padding: 5px;
+    padding-inline: 10px;
     text-decoration: none;
     border-radius: 25px;
-    border: 1px solid $color-primary;
+    border: 2px solid $color-primary;
     background-color: $color-secondary;
     margin-inline: 1rem;
     color: whitesmoke;
@@ -215,10 +218,11 @@
     img {
       width: 40px;
 
-      @media (min-width: 576px) {
-        & {
+      @media (min-width:576px) {
+        &{
           width: 50px;
         }
+        
       }
     }
   }
